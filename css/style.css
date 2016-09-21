@@ -1,0 +1,17 @@
+.reveal pre code {
+
+    background: #23241F;
+    max-height: 100%;
+}
+
+.hljs-comment {
+
+    color: #aaa;
+}
+
+.reveal .highlighted {
+    background-color: #E7AD52;
+    color: #111;
+    padding: 0 8px;
+    font-weight: bold;
+}

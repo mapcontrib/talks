@@ -1,0 +1,11 @@
+{
+  "name": "MapContrib talks",
+  "private": true,
+  "version": "0.1.0",
+  "homepage": "https://github.com/MapContrib/talks",
+  "license": "MIT",
+  "dependencies": {
+    "highlightjs": "~9.6.0",
+    "reveal.js": "~3.3.0"
+  }
+}

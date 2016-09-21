@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Meet MapContrib</title>
+
+        <meta name="description" content="Selenium">
+        <meta name="author" content="Guillaume AMAT">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../../bower_components/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../../bower_components/reveal.js/css/theme/white.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../../bower_components/highlightjs/styles/rainbow.css">
+        <link rel="stylesheet" href="../../css/style.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../../bower_components/reveal.js/css/print/pdf.css' : '../../bower_components/reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="../../bower_components/reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+            body * {
+                color: #333 !important;
+            }
+
+            .reveal section h1 img {
+                border: none;
+                box-shadow: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1><img src="logo.png" alt="MapContrib" /></h1>
+
+                    <aside class="notes">
+                        <p>
+                            Don't forget to set the browser to english.
+                    </aside>
+                </section>
+
+                <section data-background="#111">
+                    <iframe src="https://www.rudomap.xyz/t/4b1025-SOTM_amenityrecycling_IN_Belgium" width="550" height="650" frameBorder="0"></iframe>
+
+                    <aside class="notes">
+                        <p>
+                            Don't forget to show examples of:
+                        </p>
+                        <ul>
+                            <li>Controls on the left</li>
+                            <li>Temporary layers</li>
+                            <li>...</li>
+                        </ul>
+                    </aside>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="../../bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="../../bower_components/reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                minScale: 1,
+                maxScale: 1,
+
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../../bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../../bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../bower_components/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../../bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../../bower_components/reveal.js/plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
